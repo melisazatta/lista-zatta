@@ -1,0 +1,10 @@
+
+<div class="container lista">
+    <h1>Alumnos:</h1>
+<ul>
+    <li [ngStyle]="{'color': aprobados(alumno)}" *ngFor="let alumno of alumnos">
+        {{ alumno.nombre }} {{ alumno.apellido | uppercase}}    Nota: {{ alumno.nota }}
+    </li>
+  </ul>
+</div>
+
